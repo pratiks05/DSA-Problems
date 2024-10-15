@@ -8,25 +8,25 @@
 
 // LEET CODE SOlution-
 
-class Solution {
-public:
-    void rotate(vector<vector<int>>& matrix) {
-        int n=matrix.size();
+// class Solution {
+// public:
+//     void rotate(vector<vector<int>>& matrix) {
+//         int n=matrix.size();
 
-        //Transpose ka Code
-        for(int i=0; i<n; i++)
-        {
-            for(int j=i; j<matrix[i].size(); j++)
-            {
-                swap(matrix[i][j],matrix[j][i]);
-            }
-        }
+//         //Transpose ka Code
+//         for(int i=0; i<n; i++)
+//         {
+//             for(int j=i; j<matrix[i].size(); j++)
+//             {
+//                 swap(matrix[i][j],matrix[j][i]);
+//             }
+//         }
 
-        //Reverse ka Code
-        for(int i=0; i<n; i++)
-        {
-            reverse(matrix[i].begin(),matrix[i].end());
-        }
+//         //Reverse ka Code
+//         for(int i=0; i<n; i++)
+//         {
+//             reverse(matrix[i].begin(),matrix[i].end());
+//         }
 
-    }
-};
+//     }
+// };
