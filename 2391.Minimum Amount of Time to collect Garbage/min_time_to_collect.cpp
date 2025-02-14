@@ -32,7 +32,7 @@ class Solution {
                     char ch=curr[j];
                     if(ch=='P')
                     {
-                        pickP++;
+                        pickP++; //increase pick up time by 1
                         lastP=i;
                     }
                     else if(ch=='M')
