@@ -5,6 +5,7 @@
 using namespace std;
 
 //1. Leet Code Solution-(Approch-Sieve of Eratasthones(For Avoiding TLE))
+//Time Complexity- O(n log log n) 
 class Solution {
     public:
        
