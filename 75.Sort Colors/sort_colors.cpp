@@ -84,6 +84,7 @@ int main()
 
 //APPROCH AND LOGIC-
 
+//in place sorting done means there is no extra space or array used for performing the sorting
 //Two pointer approch is followed and three pointers are used here
 //index pointer->for array traversal , left pointer-> for storing 0's , and right pointer-> for storing 2's
 //while loop is used with condition index<=right because it is expected that after right pointer 2's will be there

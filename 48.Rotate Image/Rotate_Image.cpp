@@ -30,3 +30,49 @@
 
 //     }
 // };
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int row, col;
+
+    // Take number of rows and columns as input
+    cout << "Enter number of rows: "; 
+    cin >> row;
+
+    cout << "Enter number of columns: "; 
+    cin >> col;
+
+    int matrix[row][col];
+    int transpose[col][row ];
+
+    // Input the elements of the matrix
+    cout << "Enter elements of the matrix:" << endl;
+    for(int i = 0; i < row; i++) {
+        for(int j = 0; j < col; j++) {
+            cin >> matrix[i][j];
+        }
+    }
+
+    // Perform transpose
+    for(int i = 0; i < row; i++) {
+        for(int j = 0; j < col; j++) {
+            transpose[j][i] = matrix[i][j];
+        }
+    }
+
+    // Display the transposed matrix
+    cout << "Transposed matrix:" << endl;
+    for(int i = 0; i < col; i++) {
+        for(int j = 0; j < row; j++) {
+            cout << transpose[i][j] << " "; 
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
