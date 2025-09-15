@@ -1,4 +1,3 @@
-//Approch 01- O(n) time and in 2 passes
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -11,6 +10,8 @@
  */
 
 //Leet Code Solution:
+//Approch 01- O(n) time and in 2 passes
+
 /*
 class Solution {
 public:
@@ -38,4 +39,30 @@ public:
         return temp;
     }
 };
+*/
+
+
+
+//Leet Code Solution-
+//Approach 02(Tortoise Algorithm/Slow-fast pointer approach)- In single PASS
+//Time Complexity- O(n)
+
+/*
+class Solution {
+public:
+    ListNode* middleNode(ListNode* head) {
+        ListNode* fast=head;
+        ListNode* slow=head;
+        while(fast!=NULL)
+        {
+            fast=fast->next;
+            if(fast!=NULL)
+            {
+                fast=fast->next;
+                slow=slow->next;
+            }
+        }
+        return slow;
+    }
+
 */
